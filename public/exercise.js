@@ -21,6 +21,9 @@ async function initExercise() {
   let workout;
 
   if (location.search.split("=")[1] === undefined) {
+
+    // console.log(location.search); 
+    // ^^ doesn't return anything
     workout = await API.createWorkout()
     console.log(workout)
   }
